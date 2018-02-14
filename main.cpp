@@ -60,8 +60,8 @@ void create_matrix(){
 
 int main(){
   cout<<"What do you want to do?"<<endl;
-  cout<<"1 - create cyphered message"<<endl;
-  cout<<"2 - create decyphered message"<<endl;
+  cout<<"1 - create ciphered message"<<endl;
+  cout<<"2 - create dicyphered message"<<endl;
   char *answer = new (char);
   cin.getline(answer, 2);
   cout<<"Enter the message: ";
@@ -80,11 +80,11 @@ int main(){
   if (*answer == '1'){
     delete answer;
     string cyphered = get_encrypted_message(double_str[0], double_str[1]);
-    cout<<"Your cyphered message is: "<<cyphered<<endl;
+    cout<<"Your ciphered message is: "<<cyphered<<endl;
   }
   if (*answer == '2'){
     delete answer;
     string decyphered = get_decrypted_message(double_str[0], double_str[1]);
-    cout<<"Your decyphered message is: "<<decyphered<<endl;
+    cout<<"Your deciphered message is: "<<decyphered<<endl;
   }
 }
